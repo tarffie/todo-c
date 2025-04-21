@@ -160,3 +160,13 @@ int list_tasks(sqlite3 *db) {
   sqlite3_close(db);
   return SQLITE_OK;
 }
+
+void print_instructions() {
+  printf("todo-c app instructions\n"
+         "add:\tuse add followed by a task name or "
+         "brief description to add a task to database. \n"
+         "remove:\tuse remove followed by task id (shown in list) to remove "
+         "from database\n"
+         "rm:\tsame as remove"
+         "list:\tList all stored tasks\nls:\tsame as list\n");
+}

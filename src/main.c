@@ -133,7 +133,7 @@ int main(int argc, char *argv[]) {
                (strcmp(*command, "list") == 0 || strcmp(*command, "ls") == 0)) {
       list_tasks(db);
     } else {
-      // print_instructions();
+      print_instructions();
     }
   }
   sqlite3_close(db);

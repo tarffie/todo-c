@@ -15,4 +15,5 @@ extern void print_task(Task task);
 extern Task add_task(sqlite3 *db, char **task_name);
 extern int remove_task(sqlite3 *db, int id);
 extern int list_tasks(sqlite3 *db);
+extern void print_instructions();
 #endif
