@@ -1,7 +1,7 @@
 # User-space Makefile
-CC = gcc
-CFLAGS = -Wall -Wextra -std=c11 -g
-LDFLAGS = -lsqlite3
+CC = cc
+CFLAGS = -Wall -Wextra -std=c11 -g -I/usr/local/include
+LDFLAGS = -L/usr/local/lib -lsqlite3
 
 # Project structure
 SRC_DIR = src
